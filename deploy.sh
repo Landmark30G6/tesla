@@ -4,4 +4,5 @@ echo deployment is started
 echo deployment in progress 
 echo deployement is done
 echo the 6th line
-echo deployment 4 
+echo deployment 4
+echo deployment 9
