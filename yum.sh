@@ -9,6 +9,7 @@ then
 echo "pkg is already installed "
 else 
 echo "continue with the installation"
+fi
 sudo $pkg yum -y >> /tmp/yum.log
 cd /tmp
 sudo gzip yum.log
