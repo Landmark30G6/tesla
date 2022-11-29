@@ -8,6 +8,6 @@ if [ $message -eq "Nothing to do" ]
 then
 echo "pkg is already installed "
 else "continue with the installation"
-sudo yum -y >> /tmp/yum.log
+sudo $install yum -y >> /tmp/yum.log
 cd /tmp
 sudo gzip yum.log
