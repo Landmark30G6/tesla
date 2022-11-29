@@ -8,14 +8,13 @@ then
 message="Nothing to do"
 echo "pkg is already installed "
 echo "no work to do ,get a beer"
-elif
+else
 echo "continue with the installation"
-then
 echo "enter your pkg to continue installation"
+fi
 read pkg
 sudo $pkg yum -y >> /tmp/yum.log
 sudo cat /tmp/yum.log | grep "Complete!"
 echo "your pkg is installed"
-fi
 cd /tmp
 sudo gzip yum.log
