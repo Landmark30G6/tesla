@@ -13,7 +13,8 @@ echo "continue with the installation"
 then
 echo "enter your pkg to continue installation"
 read pkg
-fi
 sudo $pkg yum -y >> /tmp/yum.log
+echo "your pkg is installed"
+fi
 cd /tmp
 sudo gzip yum.log
