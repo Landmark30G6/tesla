@@ -6,7 +6,6 @@ sudo cat /tmp/yum.log | grep "Nothing to do"
 if [ $message -eq "Nothing to do" ] 
 then
 message="Nothing to do"
-echo "pkg is already installed"
 else
 echo "continue with the installation"
 echo "enter your pkg to continue installation"
