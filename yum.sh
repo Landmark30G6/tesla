@@ -8,7 +8,7 @@ then
 message="Nothing to do"
 echo "pkg is already installed "
 echo "no work to do ,get a beer"
-else
+elif
 echo "continue with the installation"
 then
 echo "enter your pkg to continue installation"
