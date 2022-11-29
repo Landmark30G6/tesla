@@ -1,13 +1,12 @@
 #!/bin/bash
-echo "what pkg do you want to install ?"
+echo "what pkg do you want to install?"
 read pkg 
 sudo yum install $pkg -y >> /tmp/yum.log
 sudo cat /tmp/yum.log | grep "Nothing to do"
 if [ $message -eq "Nothing to do" ] 
 then
 message="Nothing to do"
-echo "pkg is already installed "
-echo "no work to do ,get a beer"
+echo "pkg is already installed"
 else
 echo "continue with the installation"
 echo "enter your pkg to continue installation"
