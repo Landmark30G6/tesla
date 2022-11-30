@@ -15,5 +15,3 @@ read pkg
 sudo $pkg yum -y >> /tmp/yum.log
 sudo cat /tmp/yum.log | grep "Complete!"
 echo "your pkg is installed"
-cd /tmp
-sudo gzip yum.log >> pkg_logrotate.log
