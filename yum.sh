@@ -11,7 +11,7 @@ echo "continue with the installation"
 fi
 echo "pls enter another pkg"
 read pkg
-sudo  yum install $pkg -y >> /tmp/yum.log
+sudo yum install $pkg -y >> /tmp/yum.log
 sudo cat /tmp/yum.log | grep "Complete!"
 if [[ $message == "Complete!" ]]
 then
