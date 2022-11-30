@@ -6,10 +6,9 @@ sudo cat /tmp/yum.log | grep "Nothing to do"
 if [[ $message == "Nothing to do" ]] 
 then
 message="Nothing to do"
-break
 else
 echo "continue with the installation"
-echo "enter your pkg to continue installation"
+echo "pls enter another pkg"
 fi
 read pkg
 sudo $pkg yum -y >> /tmp/yum.log
