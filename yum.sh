@@ -3,7 +3,7 @@ echo "what pkg do you want to install?"
 read pkg 
 sudo yum install $pkg -y >> /tmp/yum.log
 sudo cat /tmp/yum.log | grep "Nothing to do"
-if [ $message -eq "Nothing to do" ] 
+if [[ $message == "Nothing to do" ]] 
 then
 message="Nothing to do"
 break
