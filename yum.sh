@@ -8,9 +8,14 @@ then
 message="Nothing to do"
 else
 echo "continue with the installation"
-echo "pls enter another pkg"
 fi
+echo "pls enter another pkg"
 read pkg
 sudo  yum install $pkg -y >> /tmp/yum.log
 sudo cat /tmp/yum.log | grep "Complete!"
+if [[ $message == "Complete!" ]]
+then
+message="Complete!"
+else
+message="Nothing to do"
 echo "your pkg is installed"
