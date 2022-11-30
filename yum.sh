@@ -11,6 +11,6 @@ echo "continue with the installation"
 echo "pls enter another pkg"
 fi
 read pkg
-sudo $pkg yum -y >> /tmp/yum.log
+sudo  yum install $pkg -y >> /tmp/yum.log
 sudo cat /tmp/yum.log | grep "Complete!"
 echo "your pkg is installed"
