@@ -42,5 +42,5 @@ echo "export M2_HOME=/opt/maven" >> ~/.bash_profile
 echo "export PATH=$PATH:$M2_HOME/bin" >> ~/.bash_profile
 #Step4) Refresh the profile file and Verify if maven is running
 source ~/.bash_profile
-mvn -version
+mvn --version
 sudo su - $name

@@ -19,3 +19,4 @@ message="Complete!"
 else
 message="Nothing to do"
 echo "your pkg is installed"
+fi
